@@ -46,22 +46,26 @@
                 android:text="@string/togglebutton1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content" tools:layout_editor_absoluteY="197dp"
-                tools:layout_editor_absoluteX="122dp" android:id="@+id/toggleButton2"
-                android:layout_marginBottom="16dp" tools:text="@string/mens" android:textOff="@string/mens" android:textOn="@string/mens"
-                android:background="@drawable/swooch_toggle" android:textColor="@android:color/white"/>
+                tools:layout_editor_absoluteX="122dp" android:id="@+id/mensLeagueButton"
+                android:layout_marginBottom="16dp" tools:text="@string/mens" android:textOff="@string/mens"
+                android:textOn="@string/mens"
+                android:background="@drawable/swooch_toggle" android:textColor="@android:color/white"
+                android:onClick="onMensClicked"/>
         <ToggleButton
                 android:text="@string/togglebutton2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton3" tools:text="@string/womens"
+                android:layout_height="wrap_content" android:id="@+id/womensLeagueButton" tools:text="@string/womens"
                 android:textOff="@string/womens" android:textOn="@string/womens" android:layout_marginBottom="16dp"
                 android:background="@drawable/swooch_toggle" android:textColor="@android:color/white"
-                android:layout_marginTop="16dp"/>
+                android:layout_marginTop="16dp" android:onClick="onWomensClicked"/>
         <ToggleButton
                 android:text="@string/togglebutton3"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content" android:id="@+id/toggleButton4" tools:text="@string/co_ed"
-                android:textOff="@string/co_ed" android:textOn="@string/co_ed" android:background="@drawable/swooch_toggle"
-                android:textColor="@android:color/white" android:layout_marginTop="16dp"/>
+                android:layout_height="wrap_content" android:id="@+id/coedLeagueButton" tools:text="@string/co_ed"
+                android:textOff="@string/co_ed" android:textOn="@string/co_ed"
+                android:background="@drawable/swooch_toggle"
+                android:textColor="@android:color/white" android:layout_marginTop="16dp"
+                android:onClick="onCoedClicked"/>
     </LinearLayout>
     <Button
             android:text="@string/next"
